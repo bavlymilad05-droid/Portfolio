@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Bavly Milad Naeem — Electronics & AI Automation Engineer</title>
+  <meta name="description" content="Portfolio of Bavly Milad Naeem: Electronics and Communication Engineering student at MUST University, specializing in digital logic, PCB design, and advanced AI workflow automation.">
+  <meta name="keywords" content="Bavly Milad, Electronics Engineer, AI Automation, n8n, PCB Design, Altium, MUST University, DEPI, ERI, Cairo, Egypt">
+  <meta name="author" content="Bavly Milad Naeem">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Bavly Milad Naeem — Electronics & AI Automation Engineer">
+  <meta property="og:description" content="Blending digital logic & PCB hardware design with autonomous AI workflow automation.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/bavly-headshot.jpg">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23070210' stroke='%23ff007f' stroke-width='6'/><path d='M30 30h24c10 0 16 6 16 14s-6 14-16 14H30V30zm12 20h10c5 0 8-2 8-6s-3-6-8-6H42v12z' fill='%23ff007f'/><circle cx='70' cy='30' r='5' fill='%23ff6b35'/></svg>">
+
+  <!-- Google Fonts: Syne, Plus Jakarta Sans, Cairo, Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Fira+Code:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       NAVIGATION BAR
+       ========================================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <!-- Logo / Brand -->
+      <a href="#" class="nav-brand">
+        <span class="brand-badge"></span>
+        <span class="text-gradient" data-i18n="navBrand">BAVLY.AI</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link" data-i18n="navAbout">About Me</a>
+        <a href="#skills" class="nav-link" data-i18n="navSkills">Skills</a>
+        <a href="#experience" class="nav-link" data-i18n="navExperience">Experience</a>
+        <a href="#projects" class="nav-link" data-i18n="navProjects">Projects</a>
+        <a href="#contact" class="nav-link" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="nav-actions">
+        <!-- Language Switcher (EN / العربية) -->
+        <button class="ctrl-btn lang-btn" id="langToggleBtn" title="Switch Language">
+          العربية
+        </button>
+
+        <!-- Light / Dark Mode Switcher -->
+        <button class="ctrl-btn" id="themeToggleBtn" title="Toggle Light/Dark Theme">
+          <span id="themeIcon">☀️</span>
+        </button>
+
+        <!-- CTA Direct Contact -->
+        <a href="#contact" class="btn btn-primary-gradient" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;" data-i18n="navGetInTouch">
+          Get In Touch
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       HERO SECTION
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left: Intro & CTAs -->
+        <div class="hero-content">
+          <div class="hero-badge-container">
+            <span class="section-tag">
+              <svg class="starburst-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0L13.8 8.2L22 10L13.8 11.8L12 20L10.2 11.8L2 10L10.2 8.2L12 0Z"/>
+              </svg>
+              <span data-i18n="heroTag">⚡ Hardware & AI Automation</span>
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            <span data-i18n="heroName">Bavly Milad Naeem</span>
+            <br>
+            <span class="title-accent" data-i18n="heroRole">Electronics & AI Automation Engineer</span>
+          </h1>
+
+          <p class="hero-subtitle" data-i18n="heroSubtitle">
+            Blending a strong foundation in digital logic, hardware implementation, and PCB design with advanced AI workflow automation.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary-gradient">
+              <span data-i18n="heroCtaProjects">View Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="#contact" class="btn btn-neon-outline">
+              <span data-i18n="heroCtaContact">Contact Me</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Quick Stats -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-value text-gradient" data-i18n="heroStatCgpa">3.76 / 4.00</span>
+              <span class="stat-label" data-i18n="heroStatCgpaLabel">MUST University CGPA</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value text-neon" data-i18n="heroStatFocus">Hardware + AI</span>
+              <span class="stat-label" data-i18n="heroStatFocusLabel">Dual Engineering Edge</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value" data-i18n="heroStatLoc">Cairo, Egypt</span>
+              <span class="stat-label" data-i18n="heroStatLocLabel">Current Base</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Primary Headshot (Clean Circular Frame, No Orbital Rings Covering Photo) -->
+        <div class="hero-visual">
+          <div class="hero-avatar-wrapper">
+            <!-- Circular Avatar Frame -->
+            <div class="hero-avatar-container">
+              <img src="assets/images/bavly-headshot.jpg" alt="Bavly Milad Naeem - Electronics & AI Automation Engineer" class="hero-avatar-img">
+            </div>
+
+            <!-- Floating Metaverse Badges -->
+            <div class="floating-chip chip-top">
+              <span class="chip-icon">⚡</span>
+              <span data-i18n="heroBadgeHardware">Hardware Synthesis</span>
+            </div>
+
+            <div class="floating-chip chip-bottom">
+              <span class="chip-icon">🤖</span>
+              <span data-i18n="heroBadgeAi">AI Automation (n8n)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ABOUT ME SECTION
+       ========================================================================= -->
+  <section class="section-spacing" id="about">
+    <div class="container">
+      <div class="section-tag">
+        <svg class="starburst-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0L13.8 8.2L22 10L13.8 11.8L12 20L10.2 11.8L2 10L10.2 8.2L12 0Z"/>
+        </svg>
+        <span data-i18n="aboutTag">01 // Profile</span>
+      </div>
+
+      <h2 class="section-title">
+        <span data-i18n="aboutTitle">Bridging Silicon with Intelligence</span>
+      </h2>
+
+      <div class="about-grid">
+        <!-- Biography Card -->
+        <div class="about-card">
+          <p class="bio-text" data-i18n="aboutBio1">
+            Bachelor of Science student in Electronics and Communication Engineering at MUST University (CGPA: 3.76/4.00). Passionate about bridging hardware and software, with specialized training in building automated processes and AI-powered solutions.
+          </p>
+          <p class="bio-text" style="margin-bottom: 0;" data-i18n="aboutBio2">
+            From architecting multi-stage analog PCB amplifiers to engineering complex event-driven autonomous n8n workflows, I approach technical challenges with deep analytical rigor and systematic troubleshooting.
+          </p>
+        </div>
+
+        <!-- Highlights & Competencies Card -->
+        <div class="about-card">
+          <div class="about-keypoints">
+            <div class="keypoint-item">
+              <div class="keypoint-bullet">🏆</div>
+              <div class="keypoint-content">
+                <h4 data-i18n="aboutHighlight1Title">Academic Excellence</h4>
+                <p data-i18n="aboutHighlight1Desc">Consistently top-ranked with a 3.76/4.00 CGPA in Electronics & Communication Engineering.</p>
+              </div>
+            </div>
+
+            <div class="keypoint-item">
+              <div class="keypoint-bullet">📐</div>
+              <div class="keypoint-content">
+                <h4 data-i18n="aboutHighlight2Title">Hardware & PCB Mastery</h4>
+                <p data-i18n="aboutHighlight2Desc">Hands-on experience in schematic capture, circuit simulation, and precision multilayer routing.</p>
+              </div>
+            </div>
+
+            <div class="keypoint-item">
+              <div class="keypoint-bullet">⚡</div>
+              <div class="keypoint-content">
+                <h4 data-i18n="aboutHighlight3Title">Autonomous AI Workflows</h4>
+                <p data-i18n="aboutHighlight3Desc">Specialized in n8n automation, API integrations, and deploying practical AI agents for workflows.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SKILLS GRID SECTION
+       ========================================================================= -->
+  <section class="section-spacing" id="skills" style="background: rgba(255, 0, 127, 0.015);">
+    <div class="container">
+      <div class="section-tag">
+        <svg class="starburst-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0L13.8 8.2L22 10L13.8 11.8L12 20L10.2 11.8L2 10L10.2 8.2L12 0Z"/>
+        </svg>
+        <span data-i18n="skillsTag">02 // Technical Arsenal</span>
+      </div>
+
+      <h2 class="section-title">
+        <span data-i18n="skillsTitle">Core Competencies & Tools</span>
+      </h2>
+      <p class="section-subtitle" data-i18n="skillsSubtitle">
+        A balanced skill stack spanning circuit design, mathematical computing, programming, and cloud workflow automations.
+      </p>
+
+      <div class="skills-grid">
+        <!-- 1. n8n -->
+        <div class="skill-card">
+          <div>
+            <div class="skill-header">
+              <div class="skill-icon-wrapper">⚡</div>
+              <span class="skill-badge" data-i18n="badgeAutomation">AI & Workflows</span>
+            </div>
+            <h3 class="skill-title">n8n Automation</h3>
+            <p class="skill-desc" data-i18n="skillN8nDesc">
+              Autonomous workflow orchestration, webhook triggers, multi-system synchronization & LLM agent pipelines.
+            </p>
+          </div>
+          <div class="skill-level-track">
+            <div class="skill-level-fill" style="width: 95%;"></div>
+          </div>
+        </div>
+
+        <!-- 2. Altium Designer -->
+        <div class="skill-card">
+          <div>
+            <div class="skill-header">
+              <div class="skill-icon-wrapper">🔌</div>
+              <span class="skill-badge" data-i18n="badgeHardware">Electronics & EDA</span>
+            </div>
+            <h3 class="skill-title">Altium Designer</h3>
+            <p class="skill-desc" data-i18n="skillAltiumDesc">
+              Schematic capture, PCB layout, layer stackup, impedance matching, and differential routing.
+            </p>
+          </div>
+          <div class="skill-level-track">
+            <div class="skill-level-fill" style="width: 90%;"></div>
+          </div>
+        </div>
+
+        <!-- 3. MATLAB -->
+        <div class="skill-card">
+          <div>
+            <div class="skill-header">
+              <div class="skill-icon-wrapper">📊</div>
+              <span class="skill-badge" data-i18n="badgeAnalysis">Simulation</span>
+            </div>
+            <h3 class="skill-title">MATLAB</h3>
+            <p class="skill-desc" data-i18n="skillMatlabDesc">
+              Digital signal processing, matrix operations, analog/digital filter design & circuit simulations.
+            </p>
+          </div>
+          <div class="skill-level-track">
+            <div class="skill-level-fill" style="width: 88%;"></div>
+          </div>
+        </div>
+
+        <!-- 4. AutoCAD -->
+        <div class="skill-card">
+          <div>
+            <div class="skill-header">
+              <div class="skill-icon-wrapper">📐</div>
+              <span class="skill-badge" data-i18n="badgeCad">Drafting</span>
+            </div>
+            <h3 class="skill-title">AutoCAD</h3>
+            <p class="skill-desc" data-i18n="skillAutocadDesc">
+              Precision 2D/3D technical drafting, electrical schematics layout, and physical dimensioning.
+            </p>
+          </div>
+          <div class="skill-level-track">
+            <div class="skill-level-fill" style="width: 85%;"></div>
+          </div>
+        </div>
+
+        <!-- 5. C++ -->
+        <div class="skill-card">
+          <div>
+            <div class="skill-header">
+              <div class="skill-icon-wrapper">💻</div>
+              <span class="skill-badge" data-i18n="badgeDev">Programming</span>
+            </div>
+            <h3 class="skill-title">C++</h3>
+            <p class="skill-desc" data-i18n="skillCppDesc">
+              Object-oriented programming, algorithmic efficiency, logic control, and embedded logic basics.
+            </p>
+          </div>
+          <div class="skill-level-track">
+            <div class="skill-level-fill" style="width: 86%;"></div>
+          </div>
+        </div>
+
+        <!-- 6. API Integration -->
+        <div class="skill-card">
+          <div>
+            <div class="skill-header">
+              <div class="skill-icon-wrapper">🔗</div>
+              <span class="skill-badge" data-i18n="badgeIntegration">Connectivity</span>
+            </div>
+            <h3 class="skill-title">API Integration</h3>
+            <p class="skill-desc" data-i18n="skillApiDesc">
+              RESTful architecture, OAuth authentication, JSON parsing, and full cross-platform connectivity.
+            </p>
+          </div>
+          <div class="skill-level-track">
+            <div class="skill-level-fill" style="width: 92%;"></div>
+          </div>
+        </div>
+
+        <!-- 7. Microsoft Office -->
+        <div class="skill-card">
+          <div>
+            <div class="skill-header">
+              <div class="skill-icon-wrapper">📑</div>
+              <span class="skill-badge" data-i18n="badgeProductivity">Documentation</span>
+            </div>
+            <h3 class="skill-title">Microsoft Office</h3>
+            <p class="skill-desc" data-i18n="skillOfficeDesc">
+              Comprehensive technical reporting, Excel data analytics, modeling, and executive presentations.
+            </p>
+          </div>
+          <div class="skill-level-track">
+            <div class="skill-level-fill" style="width: 94%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       EXPERIENCE & EDUCATION (TIMELINE)
+       ========================================================================= -->
+  <section class="section-spacing" id="experience">
+    <div class="container">
+      <div class="section-tag">
+        <svg class="starburst-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0L13.8 8.2L22 10L13.8 11.8L12 20L10.2 11.8L2 10L10.2 8.2L12 0Z"/>
+        </svg>
+        <span data-i18n="expTag">03 // Career & Academics</span>
+      </div>
+
+      <h2 class="section-title">
+        <span data-i18n="expTitle">Experience & Education</span>
+      </h2>
+      <p class="section-subtitle" data-i18n="expSubtitle">
+        Milestones in professional internships, specialized engineering training, and university academics.
+      </p>
+
+      <div class="timeline-wrapper">
+        <!-- Glowing Circuit Track -->
+        <div class="timeline-track"></div>
+
+        <!-- Timeline Node 1: AI Automation Engineering (DEPI) -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date" data-i18n="expDepiDate">July 2026 – Dec 2026</span>
+            <h3 class="timeline-title" data-i18n="expDepiRole">AI Automation Engineering Intern</h3>
+            <div class="timeline-institution" data-i18n="expDepiCompany">Digital Egypt Pioneers Initiative (DEPI)</div>
+            <p class="timeline-desc" data-i18n="expDepiDesc">
+              Completed an intensive internship focused on enterprise workflow automation using n8n. Designed automated data pipelines, integrated third-party REST APIs, and architected AI-driven solutions to optimize complex technical procedures.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Node 2: PCB Design Training (ERI) -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date" data-i18n="expEriDate">June 2026 – July 2026</span>
+            <h3 class="timeline-title" data-i18n="expEriRole">PCB Design Trainee</h3>
+            <div class="timeline-institution" data-i18n="expEriCompany">Electronics Research Institute (ERI)</div>
+            <p class="timeline-desc" data-i18n="expEriDesc">
+              Gained professional hands-on experience in schematic capture, PCB layout, and routing. Designed and implemented CE amplifiers, multistage amplifiers, and regulated power supplies with rigorous adherence to signal integrity standards.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Node 3: Education (MUST University) -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date" data-i18n="expMustDate">Sept 2024 – July 2029</span>
+            <h3 class="timeline-title" data-i18n="expMustRole">Bachelor of Science in Electronics & Communication Engineering</h3>
+            <div class="timeline-institution" data-i18n="expMustCompany">Misr University for Science & Technology (MUST)</div>
+            <p class="timeline-desc" data-i18n="expMustDesc">
+              Pursuing Bachelor's degree with an outstanding academic performance (CGPA: 3.76/4.00). Comprehensive coursework covering semiconductor devices, digital logic, communications theory, microprocessors, and electromagnetic fields.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       PROJECTS SHOWCASE SECTION
+       ========================================================================= -->
+  <section class="section-spacing" id="projects" style="background: rgba(121, 40, 202, 0.02);">
+    <div class="container">
+      <div class="section-tag">
+        <svg class="starburst-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0L13.8 8.2L22 10L13.8 11.8L12 20L10.2 11.8L2 10L10.2 8.2L12 0Z"/>
+        </svg>
+        <span data-i18n="projTag">04 // Engineering Showcase</span>
+      </div>
+
+      <h2 class="section-title">
+        <span data-i18n="projTitle">Featured Technical Projects</span>
+      </h2>
+      <p class="section-subtitle" data-i18n="projSubtitle">
+        Real-world hardware designs and digital systems tested for reliability, precision, and performance.
+      </p>
+
+      <div class="projects-grid">
+        <!-- PROJECT 1: REACTION TIME RACE GAME + INTERACTIVE SIMULATOR -->
+        <div class="project-card">
+          <div class="project-banner">
+            <div class="project-icon-large">⏱️</div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag" data-i18n="proj1Tag1">NE555 Timer IC</span>
+              <span class="project-tag" data-i18n="proj1Tag2">Analog Timing</span>
+              <span class="project-tag" data-i18n="proj1Tag3">Circuit Debugging</span>
+            </div>
+
+            <h3 class="project-title" data-i18n="proj1Title">Reaction Time Race Game</h3>
+            <p class="project-desc" data-i18n="proj1Desc">
+              Developed a 555 Timer IC-based 'Fastest Finger First' game to test reaction speed. Engineered circuit timing networks, debounce logic, and output state indicators, focusing on technical troubleshooting and reliable circuit operation.
+            </p>
+
+            <!-- Live Playable 555-Timer Simulator -->
+            <div class="interactive-simulator-box">
+              <div class="simulator-title">
+                <span data-i18n="proj1SimTitle">Interactive 555-Timer Simulator</span>
+                <span>⚡ LIVE IC TEST</span>
+              </div>
+
+              <div class="reaction-game-area">
+                <button class="reaction-btn-trigger" id="reactionTrigger">
+                  <span id="reactionText" data-i18n="proj1SimPrompt">Click to Start Test</span>
+                  <small id="reactionSub" style="font-size: 0.75rem; opacity: 0.8; margin-top: 0.3rem;" data-i18n="proj1SimSub">Simulates 555 RC charging cycle & reaction capture</small>
+                </button>
+
+                <div class="reaction-stats">
+                  <div>
+                    <span data-i18n="proj1StatTime">Reaction Time:</span>
+                    <strong id="reactionTimeVal" style="color: var(--neon-pink);">-- ms</strong>
+                  </div>
+                  <div>
+                    <span data-i18n="proj1StatRank">Performance:</span>
+                    <strong id="reactionRankVal" style="color: #00ff7f;">Ready</strong>
+                  </div>
+                  <div>
+                    <span data-i18n="proj1StatBest">Best Score:</span>
+                    <strong id="reactionBestVal">-- ms</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: UNIVERSAL COMBINATIONAL LOGIC SYSTEM + INTERACTIVE SIMULATOR -->
+        <div class="project-card">
+          <div class="project-banner">
+            <div class="project-icon-large">🎛️</div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag" data-i18n="proj2Tag1">Digital Logic Design</span>
+              <span class="project-tag" data-i18n="proj2Tag2">Discrete Gates</span>
+              <span class="project-tag" data-i18n="proj2Tag3">Arithmetic Circuits</span>
+            </div>
+
+            <h3 class="project-title" data-i18n="proj2Title">Universal Combinational Logic System</h3>
+            <p class="project-desc" data-i18n="proj2Desc">
+              Designed and implemented a modular logic system built purely from discrete basic gates (AND, OR, NOT, XOR). Seamlessly incorporates a Full Adder, Full Subtractor, 2:1 Multiplexer, and 2:4 Decoder without pre-built IC modules.
+            </p>
+
+            <!-- Live Interactive Logic Simulator -->
+            <div class="interactive-simulator-box">
+              <div class="simulator-title">
+                <span data-i18n="proj2SimTitle">Interactive Gate Logic Simulator</span>
+                <span>🎛️ REAL-TIME</span>
+              </div>
+
+              <div class="logic-simulator-area">
+                <!-- Toggleable Inputs -->
+                <div class="logic-inputs-row">
+                  <div class="logic-input-toggle">
+                    <button class="logic-toggle-btn" id="inputA" data-value="0">0</button>
+                    <span class="logic-input-label" data-i18n="proj2InputA">Input A</span>
+                  </div>
+
+                  <div class="logic-input-toggle">
+                    <button class="logic-toggle-btn" id="inputB" data-value="0">0</button>
+                    <span class="logic-input-label" data-i18n="proj2InputB">Input B</span>
+                  </div>
+
+                  <div class="logic-input-toggle">
+                    <button class="logic-toggle-btn" id="inputCin" data-value="0">0</button>
+                    <span class="logic-input-label" data-i18n="proj2InputCin">Carry In (Cin)</span>
+                  </div>
+
+                  <div class="logic-input-toggle">
+                    <button class="logic-toggle-btn" id="inputSel" data-value="0">0</button>
+                    <span class="logic-input-label" data-i18n="proj2InputSel">MUX Select (S)</span>
+                  </div>
+                </div>
+
+                <!-- Real-time Circuit Computed Outputs -->
+                <div class="logic-outputs-grid">
+                  <div class="logic-output-badge">
+                    <span data-i18n="proj2OutSum">Full Adder Sum</span>
+                    <span class="output-value" id="outSum">0</span>
+                  </div>
+
+                  <div class="logic-output-badge">
+                    <span data-i18n="proj2OutCarry">Full Adder Carry</span>
+                    <span class="output-value" id="outCarry">0</span>
+                  </div>
+
+                  <div class="logic-output-badge">
+                    <span data-i18n="proj2OutDiff">Full Subtractor Diff</span>
+                    <span class="output-value" id="outDiff">0</span>
+                  </div>
+
+                  <div class="logic-output-badge">
+                    <span data-i18n="proj2OutBorrow">Subtractor Borrow</span>
+                    <span class="output-value" id="outBorrow">0</span>
+                  </div>
+
+                  <div class="logic-output-badge">
+                    <span data-i18n="proj2OutMux">2:1 MUX Output (Y)</span>
+                    <span class="output-value" id="outMux">0</span>
+                  </div>
+
+                  <div class="logic-output-badge">
+                    <span data-i18n="proj2OutDec">2:4 Decoder Line</span>
+                    <span class="output-value high" id="outD0" title="D0">D0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER & CONTACT INFORMATION SECTION
+       ========================================================================= -->
+  <footer class="section-spacing contact-section" id="contact">
+    <div class="container">
+      <div class="section-tag">
+        <svg class="starburst-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0L13.8 8.2L22 10L13.8 11.8L12 20L10.2 11.8L2 10L10.2 8.2L12 0Z"/>
+        </svg>
+        <span data-i18n="contactTag">05 // Connect</span>
+      </div>
+
+      <h2 class="section-title">
+        <span data-i18n="contactTitle">Initiate Communication</span>
+      </h2>
+      <p class="section-subtitle" data-i18n="contactSubtitle">
+        Looking to collaborate on AI workflow automation, circuit design, or discuss prospective opportunities? Reach out below.
+      </p>
+
+      <div class="contact-grid">
+        <!-- Contact Information Cards -->
+        <div>
+          <div class="contact-info-list">
+            <!-- Location -->
+            <div class="contact-info-card">
+              <div class="contact-card-left">
+                <div class="contact-card-icon">📍</div>
+                <div>
+                  <div class="contact-card-label" data-i18n="contactLocLabel">Location</div>
+                  <div class="contact-card-value" data-i18n="contactLocVal">Shoubra, Cairo, Egypt</div>
+                </div>
+              </div>
+              <a href="https://maps.google.com/?q=Shoubra,Cairo" target="_blank" rel="noopener noreferrer" class="contact-action-btn" title="View on Maps">
+                ↗
+              </a>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-info-card">
+              <div class="contact-card-left">
+                <div class="contact-card-icon">✉️</div>
+                <div>
+                  <div class="contact-card-label" data-i18n="contactEmailLabel">Email</div>
+                  <div class="contact-card-value" data-i18n="contactEmailVal">bavlymilad05@gmail.com</div>
+                </div>
+              </div>
+              <div style="display: flex; gap: 0.4rem;">
+                <button class="contact-action-btn" data-copy-text="bavlymilad05@gmail.com" title="Copy Email">
+                  📋
+                </button>
+                <a href="mailto:bavlymilad05@gmail.com" class="contact-action-btn" title="Send Email">
+                  ✉️
+                </a>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-info-card">
+              <div class="contact-card-left">
+                <div class="contact-card-icon">📞</div>
+                <div>
+                  <div class="contact-card-label" data-i18n="contactPhoneLabel">Phone</div>
+                  <div class="contact-card-value" dir="ltr" data-i18n="contactPhoneVal">+201201866156</div>
+                </div>
+              </div>
+              <div style="display: flex; gap: 0.4rem;">
+                <button class="contact-action-btn" data-copy-text="+201201866156" title="Copy Phone Number">
+                  📋
+                </button>
+                <a href="https://wa.me/201201866156" target="_blank" rel="noopener noreferrer" class="contact-action-btn" title="WhatsApp Message">
+                  💬
+                </a>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-info-card">
+              <div class="contact-card-left">
+                <div class="contact-card-icon">💼</div>
+                <div>
+                  <div class="contact-card-label" data-i18n="contactLinkedinLabel">LinkedIn Profile</div>
+                  <div class="contact-card-value" data-i18n="contactLinkedinVal">linkedin.com/in/bavly-milad-n</div>
+                </div>
+              </div>
+              <a href="https://linkedin.com/in/bavly-milad-n" target="_blank" rel="noopener noreferrer" class="contact-action-btn" title="Visit LinkedIn">
+                ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-form-card">
+          <h3 style="font-size: 1.4rem; margin-bottom: 1.5rem;" data-i18n="contactFormTitle">Send a Direct Message</h3>
+          
+          <form id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="senderName" data-i18n="formNameLabel">Your Name</label>
+              <input type="text" id="senderName" class="form-input" required placeholder="e.g. John Doe" data-i18n-placeholder="formNamePlaceholder">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="senderEmail" data-i18n="formEmailLabel">Your Email Address</label>
+              <input type="email" id="senderEmail" class="form-input" required placeholder="e.g. john@example.com" data-i18n-placeholder="formEmailPlaceholder">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="senderSubject" data-i18n="formSubjectLabel">Subject</label>
+              <input type="text" id="senderSubject" class="form-input" required placeholder="Project Collaboration / Job Opportunity" data-i18n-placeholder="formSubjectPlaceholder">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="senderMessage" data-i18n="formMsgLabel">Message</label>
+              <textarea id="senderMessage" class="form-textarea" required placeholder="Describe your project or inquiry in detail..." data-i18n-placeholder="formMsgPlaceholder"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary-gradient" style="width: 100%; border-radius: 12px;" data-i18n="formSubmitBtn">
+              Transmit Message ⚡
+            </button>
+
+            <div id="formStatus" style="display: none; margin-top: 1rem; text-align: center; font-weight: 600;"></div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div data-i18n="footerCopy">
+          © 2026 Bavly Milad Naeem. Engineered with precision.
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/bavly-milad-n" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+            in
+          </a>
+          <a href="mailto:bavlymilad05@gmail.com" class="social-link" title="Email">
+            ✉
+          </a>
+          <a href="https://wa.me/201201866156" target="_blank" rel="noopener noreferrer" class="social-link" title="WhatsApp">
+            💬
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Back to top">
+    ↑
+  </button>
+
+  <!-- Notification Toast -->
+  <div class="toast-notice" id="toastNotification"></div>
+
+  <!-- Scripts -->
+  <script src="js/demos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
